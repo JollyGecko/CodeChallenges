@@ -1,0 +1,27 @@
+import sys,math
+a,b,c,d=[int(i) for i in input().split()]
+# a = list(map(int, input().split()))
+
+# game loop
+while 1:
+    y=b-d
+    x=a-c
+    g,d=((('',d),('N',d-1))[y<0], ('S',d+1))[y>0]
+    h,c=((('',c),('W',c-1))[x<0], ('E',c+1))[x>0]
+    # works: b=''and y==0 or'N'if y<0 else'S'
+    # works: b=y==0 and''or y<0 and'N'or'S'
+    print(g+h)
+
+
+
+print(d > b ? 'N' : d<b ? 'S': )
+print(c > a ? 'W' : c<a ? 'W': )
+c += (c<a)-(c>a)
+d += (d<b)-(d>b)
+
+t=lambda:b>d
+u=lambda:a>c
+
+(('N','S')[t()],'')[y]
+
+(('N','S')[b>d],'')[b!=d]
