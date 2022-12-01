@@ -1,1 +1,1 @@
-Each file contains the solutions of a challenge, with a link in the header to the website.
+Each file contains the solutions of a challenge, with a link to the website in the header.
